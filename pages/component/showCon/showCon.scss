@@ -1,0 +1,79 @@
+@import './../../../lib/reset.scss';
+
+.homeCon {
+  @include flex();
+  @include rect(100%,100%);
+  @include flexbox();
+  @include flex-direction(column);
+  
+  .movie {
+    @include flexbox();
+    @include align-items();
+    @include rect(100%,114px);
+    .pic {
+      @include rect(64px, 90px);
+    }
+    .movieInfo {
+      @include flex();
+      @include rect(100%,100%);
+      @include flexbox();
+      @include justify-content(space-around);
+      @include align-items();
+      @include border(0 0 1px 0, #696969);
+      .movieInfoCon {
+        @include flex();
+        @include rect(100%,96px);
+        @include flexbox();
+        @include flex-direction(column);
+        @include text-color(#666);
+        @include padding(0 0 0 10px);
+        @include font-size(13px);
+        .movieTit {
+          @include rect(121px,auto);
+          @include font-weight(bold);
+          @include font-size(16px);
+          @include line-height(20px);
+          @include text-color(#333);
+          @include ellipsis();
+        }
+        .scoreBox, .wish, .star, .showInfo {
+          @include line-height(20px);
+        } 
+        .scoreBox {
+          .score {
+            @include text-color(#faaf00);
+            @include font-weight(bold);
+          }
+        }
+        .wish {
+          .wishNum {
+            @include text-color(#faaf00);
+            @include font-weight(bold);
+          }
+        }
+        .star {
+          @include rect(121px,20px);
+          @include ellipsis();
+        }
+        .showInfo {
+          // @include rect(150px,20px);
+        }
+      }
+      .buyTicket {
+        @include rect(47px,27px);
+        @include flexbox();
+        @include align-items();
+        @include justify-content();
+        @include text-color(#fff);
+        @include font-size(12px);
+        @include border-radius(4px);
+        &.blue {
+          @include background-color(#3C9FE6);
+        }
+        &.red {
+        	@include background-color(#E54847);
+        }
+      }
+    }
+  }
+ }

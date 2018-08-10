@@ -1,0 +1,13 @@
+ <view class="topBar" >
+  <view class="topBarL">
+    <text>北京</text>
+     <icon class="iconfont icon-sanjiao arrow"></icon>
+  </view>
+  <view class="topBarC">
+    <text class="{{activeFlag=='hotMovie'?'hotMovie active':'hotMovie' }}" bindtap='changeMovieType1'>正在热映</text>
+    <text class="{{activeFlag=='soonMovie'?'soonMovie active':'soonMovie' }}" bindtap='changeMovieType2'>即将上映</text>
+  </view>
+  <view class="topBarR">
+    <icon class="iconfont icon-sousuo searchBtn"></icon>
+  </view>
+</view>

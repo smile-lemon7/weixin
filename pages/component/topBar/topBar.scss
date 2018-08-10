@@ -1,0 +1,48 @@
+@import './../../../lib/reset.scss';
+@import './../../../font.css';
+  .topBar {
+    @include rect(100%,44px);
+    @include border(0 0 1px 0, #e6e6e6);
+    @include flexbox();
+    @include align-items();
+    @include padding(0 15px);
+    .topBarL, .topBarC, .topBarR {
+      @include flexbox();
+      @include align-items();
+    }
+    .topBarL {
+      @include rect(auto,100%);
+      @include font-size(14px);
+      .arrow {
+        @include rect(auto,34px);
+      }
+    }
+    .topBarC {
+      @include flex();
+      @include rect(100%,100%);
+      @include flexbox();
+      @include justify-content();
+      .hotMovie, .soonMovie{
+        @include rect(auto,100%);
+        @include flexbox();
+        @include align-items();
+        @include justify-content();
+        @include padding(0 10px);
+        &.active {
+          @include border(0 0 3px 0, #E54847);
+          @include text-color(#E54847);
+        }
+      }
+      .soonMovie {
+      }
+    }
+    .topBarR {
+      @include rect(45px,100%);
+      .searchBtn {
+        @include font-size(23px);
+        @include text-color(#E54847);
+        @include font-weight(bold);
+      }
+    }
+    
+  }

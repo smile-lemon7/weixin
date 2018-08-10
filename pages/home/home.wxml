@@ -1,0 +1,14 @@
+<view class='container'>
+   <view class='bannerBox'>
+    <com-banner></com-banner>
+   </view>
+   <view class='homeTopBar'>
+     <com-topBar activeFlag="{{activeFlag}}"></com-topBar>
+   </view>
+   <view class="scrollView" wx:if="hotMovie">
+     <com-showCon hotMovieList="{{hotMovieList}}"></com-showCon>
+   </view>
+   <view class="scrollView" wx:else>
+   	<com-showCon expectedMovie="{{expectedMovie}}" bindtap="getSoonMovie"></com-showCon>
+   </view>
+</view>

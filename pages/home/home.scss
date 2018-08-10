@@ -1,0 +1,18 @@
+@import './../../lib/reset.scss';
+
+.container {
+  .bannerBox {
+    @include rect(100%,90px);
+  }
+  .homeTopBar {
+    @include rect(100%,44px);
+  }
+  .scrollView {
+    @include flex();
+    @include rect(96%,100%);
+    @include flexbox();
+    @include flex-direction(column);
+    @include align-items();
+    // @include padding(0 0 0 15px);
+  }
+}

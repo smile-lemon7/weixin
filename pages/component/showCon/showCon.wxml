@@ -1,0 +1,16 @@
+<view class="homeCon">
+  <view wx:for="{{hotMovieList}}" wx:key="{{item.id}}" class="movie">     
+    <image src="{{ item.img }}" class="pic"></image>  
+    <view class='movieInfo'>
+      <view class='movieInfoCon'>
+        <view class="movieTit">{{item.nm}}</view>
+        <view class="scoreBox" wx:if="{{item.sc!==0}}" >观众评 <text class="score">{{item.sc}}</text></view>
+        <view class="wish" wx:if="{{item.sc==0}}" ><text class="wishNum">{{item.wish}}</text>人想看</view>
+        <view class="star">主演: {{item.star}}</view>
+        <view class="showInfo">{{item.showInfo}}</view>
+      </view>
+      <view class='buyTicket blue' wx:if="{{item.preShow}}">预售</view>
+      <view class='buyTicket red' wx:else>购票</view>
+    </view>
+  </view>
+</view>

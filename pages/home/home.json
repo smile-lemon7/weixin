@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "com-topBar": "/pages/component/topBar/topBar",
+    "com-showCon": "/pages/component/showCon/showCon",
+    "com-banner": "/pages/component/banner/banner"
+  }
+}

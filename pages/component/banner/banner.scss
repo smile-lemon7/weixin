@@ -1,0 +1,11 @@
+@import './../../../lib/reset.scss';
+
+.banner {
+  @include rect(100%,100%);
+  .swiper {
+    @include rect(100%,90px);
+    .slide-image {
+      @include rect(100%,100%);
+    }
+  }
+}
