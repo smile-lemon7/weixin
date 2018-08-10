@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/logs/logs",
+    "pages/cinema/cinema",
+    "pages/user/user"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#f66",
+    "navigationBarTitleText": "电影演出赛事",
+    "navigationBarTextStyle": "white"
+  },
+   "tabBar": {
+     "color": "#696969",
+     "selectedColor": "#E54847",
+     "backgroundColor": "#fff",
+    "list": [{
+      "pagePath": "pages/home/home",
+      "text": "电影",
+      "iconPath": "./resources/movie.png",
+      "selectedIconPath": "./resources/movieR.png"
+    }, {
+      "pagePath": "pages/cinema/cinema",
+      "text": "影院",
+      "iconPath": "./resources/cinema.png",
+      "selectedIconPath": "./resources/cinemaR.png"
+    }, {
+      "pagePath": "pages/user/user",
+      "text": "我的",
+      "iconPath": "./resources/user.png",
+      "selectedIconPath": "./resources/userR.png"
+    }]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}
